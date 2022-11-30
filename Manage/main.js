@@ -27,6 +27,13 @@ var students = [
       phone: " 0986456633",
       address: "Nguyen Huu Huan , Ha Noi",
     },
+    {
+      id: 5,
+      name: "Hieu Pham",
+      age: 35,
+      phone: "012675980",
+      address: "Ha Noi",
+    },
   ];
   let tmpStudentId;
   let editMode = false;
@@ -73,11 +80,6 @@ var students = [
     var element = document.querySelector(selector);
     element.innerHTML = value;
   }
-  
-  function onEditStudent(index) {
-    enableEdit();
-    var studentEdit = students[index];
-    
     setInputValue('#name', studentEdit.name);
     setInputValue('#age', studentEdit.age);
     setInputValue('#address', studentEdit.address);
