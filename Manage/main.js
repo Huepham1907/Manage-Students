@@ -3,7 +3,7 @@ var students = [
       id: 1,
       name: "Hoa Tran",
       age: 21,
-      phone: " 012956487",
+      phone: "012956487",
       address: " Hai Ba Trung , Ha Noi",
     },
     {
@@ -25,7 +25,7 @@ var students = [
       name: "Linh Pham 2",
       age: 25,
       phone: " 0986456633",
-      address: " Nguyen Huu Huan , Ha Noi",
+      address: "Nguyen Huu Huan , Ha Noi",
     },
   ];
   let tmpStudentId;
@@ -74,7 +74,6 @@ var students = [
     element.innerHTML = value;
   }
   
-
   function onEditStudent(index) {
     enableEdit();
     var studentEdit = students[index];
