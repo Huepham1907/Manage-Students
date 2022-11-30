@@ -80,6 +80,11 @@ var students = [
     var element = document.querySelector(selector);
     element.innerHTML = value;
   }
+  
+  function onEditStudent(index) {
+    enableEdit();
+    var studentEdit = students[index];
+    
     setInputValue('#name', studentEdit.name);
     setInputValue('#age', studentEdit.age);
     setInputValue('#address', studentEdit.address);
